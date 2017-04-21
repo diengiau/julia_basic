@@ -42,3 +42,18 @@ To re-index the data, we use this code:
 car[:idx] = 1:size(car,1)
 ```
 This is useful when you want to do event study. Above, `car` is the data frame name of the `car` dataset.
+
+In R, thanks to Hadleyverse, we can use `group_by` and `summarise` to do any split-apply-combine strategy. In Julia, they offer a very strange way to do that. Let see this example: to calculate mean of `price` for each `rep78` groups
+```julia
+for subdf in groupby(car, :rep78)
+  println(mean(subdf[:price]))
+end
+```
+
+Another interesting way is using `by` and `do` together:
+```julia
+by(car, :rep78) do df
+  DataFrame(m = mean(df[:price]), sd = std(df[:price]))
+end
+```
+
