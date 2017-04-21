@@ -35,3 +35,10 @@ x[1]
 1
 ```
 It is a bit good for R-users. In my view, I don't think beginning from 0 brings no additional value at all.
+
+## 2. Some interesting codes
+To re-index the data, we use this code:
+```julia
+car[:idx] = 1:size(car,1)
+```
+This is useful when you want to do event study. Above, `car` is the data frame name of the `car` dataset.
