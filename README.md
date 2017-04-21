@@ -44,4 +44,5 @@ end
 
 In Python, I prefer the `lambda` such as `lambda x: x + 1`. In Julia, they have: ` x -> x + 1`.
 
-
+## 3. Benchmark
+Finally, how is the performance between Julia and Python (we should ignore R, ^^)? Actually, Julia is quite as same as Python, as opposed to the benchmark in their homepage. Actually, some tasks Python are very fast now (ver 3.). In addition, with Numba, Python can be better with JIT compiler.
