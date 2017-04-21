@@ -3,6 +3,8 @@ Learn how to use Julia language. Why? It is similar to Python, but fast.
 
 I use JuliaBox to run the IJulia notebook. They offer a system of 6gb memory.
 
+But writing Julia in Atom editor is a good idea. I find it very useful in some ways. First, it offers a very good system of autocomplete code for beginners. Second, the Workspace is quite good, especially for who are R-studio addicted. And so on.
+
 
 ## 1. Some first words
 Julia has a simlar indexer as in R, but different from Python. While you index from 0 in Python, Julia use the first index as 1 as in R.
